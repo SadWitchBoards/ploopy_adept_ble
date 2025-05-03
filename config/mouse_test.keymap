@@ -1,9 +1,8 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
 #define SCRLM 1
@@ -56,7 +55,7 @@
 
         default_layer {
             bindings = <
-&ltm BLTH MB4  &ltm DEVICE MB5  &mkp MCLK  &lhm SCRLM RCLK  &mkp LCLK  &mto SCRLM SNIPE
+&mkp LCLK  &ltm DEVICE MB5  &mkp MCLK  &lhm SCRLM RCLK  &mkp MB4  &mto SCRLM SNIPE
             >;
         };
 
